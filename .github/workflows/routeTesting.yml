@@ -1,0 +1,24 @@
+name: Routing Tests
+
+on:
+  push:
+    branches: 
+      - 'main'
+  pull_request:
+    branches:
+      - 'main'
+
+jobs:
+  build:
+    name: Testing Environment
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+    - uses: actions/checkout@v3
+    - run: npm i
+    - name: Route Tests
+      working-directory: './'
+      run: npm run route-tests
