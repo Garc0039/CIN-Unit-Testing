@@ -21,4 +21,4 @@ jobs:
     - run: npm i
     - name: Route Tests
       working-directory: './'
-      run: npm run route-tests
+      run: npm run route-test
