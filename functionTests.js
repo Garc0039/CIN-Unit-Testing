@@ -23,7 +23,7 @@ describe('Unit Testing Dir', function() {
         randomNumber = Math.round(randomNumber);
         if(randomNumber <= 10 && randomNumber >= 1) {
         } else {
-            throw Error("Your number is smaller than 1 or bigger than 10!");
+            throw Error("Your number is not within the spectrum");
         }
     });
 
