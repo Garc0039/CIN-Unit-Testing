@@ -5,10 +5,10 @@ let color = false;
 
 
 beforeEach(async function () {
-    randomNumber = await axios.get('http://127.0.0.1:3000/getRandomNumber');
+    randomNumber = await axios.get('/getRandomNumber');
     randomNumber = randomNumber.data;
 
-    randomColor = await axios.get('http://127.0.0.1:3000/getRandomColor');
+    randomColor = await axios.get('/getRandomColor');
     randomColor = randomColor.data;
 
     const array = ['blue', 'yellow', 'green', 'red', 'purple', 'black', 'white', 'orange', 'pink', 'rose'];
