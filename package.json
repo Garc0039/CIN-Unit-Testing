@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "node": "nodemon -L index.js",
-    "route-test": "mocha routeTests.js"
+    "route-test": "mocha routeTests.js",
+    "function-test": "mocha functionTests.js"
   },
   "author": "Garcia David",
   "license": "ISC",
